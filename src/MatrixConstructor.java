@@ -9,7 +9,7 @@ public class MatrixConstructor {
         this.matrix[row][index] = value;
     }
 
-    public void setValueToArray(int numberOfVariables, int index, double value){
+    public void setValueToMatrixIdentifier(int numberOfVariables, int index, double value){
         if (this.matrixIdentifier == null){
             this.matrixIdentifier = new double[numberOfVariables];
         }

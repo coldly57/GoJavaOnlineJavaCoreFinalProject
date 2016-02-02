@@ -34,7 +34,7 @@ public class Main {
             }
             System.out.println("Please enter the result of equation:");
             double res = getCorrectValue();
-            matrixConstructor.setValueToArray(numberOfVariables, i - 1, res);
+            matrixConstructor.setValueToMatrixIdentifier(numberOfVariables, i - 1, res);
         }
     }
 

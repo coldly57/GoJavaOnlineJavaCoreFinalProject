@@ -42,7 +42,7 @@ public class MatrixConstructorTest {
     public void testSetValueToArray() throws Exception {
 
         for (int i = 0; i < numberOfVariables; i++){
-            matrixConstructor.setValueToArray(numberOfVariables, i, i * 2);
+            matrixConstructor.setValueToMatrixIdentifier(numberOfVariables, i, i * 2);
         }
 
         assertArrayEquals(expectedMatrixIdentifier, matrixConstructor.getMatrixIdentifier(), 0);
