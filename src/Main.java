@@ -28,11 +28,11 @@ public class Main {
         for (int i = 1; i <= numberOfVariables; i++){
             System.out.format("Equation #%d:%n", i);
             for (int j = 1; j <= numberOfVariables; j++){
-                System.out.format("Please enter multiplier of X%d%n", j);
+                System.out.format("Please enter multiplier of X%d (must be real number):%n", j);
                 double multiplier = getCorrectValue();
                 matrixConstructor.setValueToMatrix(numberOfVariables, i - 1, j - 1, multiplier);
             }
-            System.out.println("Please enter the result of equation:");
+            System.out.println("Please enter the result of equation (must be real number):");
             double res = getCorrectValue();
             matrixConstructor.setValueToMatrixIdentifier(numberOfVariables, i - 1, res);
         }
@@ -49,7 +49,7 @@ public class Main {
             value = sc.nextDouble();
         }
         catch (InputMismatchException e){
-            System.out.println("You have entered incorrect value. Please try again");
+            System.out.println("You have entered incorrect value. Please try again (must be real number):");
             value = getCorrectValue();
         }
 
